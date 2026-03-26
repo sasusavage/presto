@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Presto CRM | The Ultimate Growth Toolkit</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Presto CRM | Run Your Entire Business From One Dashboard</title>
+    <meta name="description" content="Manage customers, payments, orders, and operations — powered by AI and built for African businesses.">
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200..800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -16,369 +18,407 @@
                     colors: {
                         "primary": "#228B22",
                         "navy": "#001F3F",
-                        "background-light": "#f8f6f6",
                         "background-dark": "#050505",
+                        "presto-blue": "#080685",
+                        "presto-cyan": "#00ff88",
+                        "presto-accent": "#302cff",
                     },
                     fontFamily: {
-                        "display": ["Public Sans", "sans-serif"]
+                        "display": ["Plus Jakarta Sans", "sans-serif"]
                     },
                     borderRadius: {
-                        "DEFAULT": "0.25rem",
-                        "lg": "0.5rem",
                         "xl": "0.75rem",
-                        "full": "9999px"
+                        "2xl": "1rem",
+                        "3xl": "1.5rem",
+                        "4xl": "2.5rem",
                     },
                 },
             },
         }
     </script>
-<style>
-        body {
-            background-color: #050505;
-        }
+    <style>
+        body { background-color: #050505; }
         .mesh-gradient {
             background-image: 
                 radial-gradient(at 0% 0%, hsla(120, 61%, 34%, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 0%, hsla(210, 100%, 12%, 0.15) 0px, transparent 50%),
-                radial-gradient(at 100% 100%, hsla(120, 61%, 34%, 0.1) 0px, transparent 50%),
-                radial-gradient(at 0% 100%, hsla(210, 100%, 12%, 0.1) 0px, transparent 50%);
+                radial-gradient(at 100% 0%, hsla(210, 100%, 12%, 0.15) 0px, transparent 50%);
         }
         .glass-card {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        .glow-border:hover {
-            border-color: #228B22;
-            box-shadow: 0 0 20px rgba(34, 139, 34, 0.2);
-        }
     </style>
 </head>
-<body class="font-display text-slate-100 selection:bg-primary/30 mesh-gradient min-h-screen overflow-x-hidden">
-<!-- Top Navigation -->
-<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
-<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-<div class="flex items-center gap-3">
-<div class="bg-primary p-1.5 rounded-lg">
-<span class="material-symbols-outlined text-white text-2xl">rocket_launch</span>
-</div>
-<h1 class="text-2xl font-black tracking-tighter text-white">PRESTO<span class="text-primary">CRM</span></h1>
-</div>
-<nav class="hidden md:flex items-center gap-10">
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#features">Features</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#whatsapp">WhatsApp AI</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#how-it-works">Process</a>
-<a class="text-sm font-medium hover:text-primary transition-colors" href="#pricing">Pricing</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="px-5 py-2 text-sm font-bold hover:text-primary transition-colors">Login</button>
-<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-full text-sm font-bold transition-all transform hover:scale-105">
-                    Start Free Trial
-                </button>
-</div>
-</div>
-</header>
-<main>
-<!-- Hero Section -->
-<section class="relative pt-40 pb-20 px-6">
-<div class="max-w-7xl mx-auto text-center">
-<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8">
-<span class="relative flex h-2 w-2">
-<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
-</span>
-<span class="text-xs font-bold uppercase tracking-widest text-primary">Now Powered by Presto Q AI</span>
-</div>
-<h1 class="text-6xl md:text-8xl font-black tracking-tight leading-[0.9] mb-8 bg-gradient-to-b from-white to-white/60 bg-clip-text text-transparent">
-                    The Ultimate CRM <br/>for Explosive Growth.
-                </h1>
-<p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
-                    Manage customers, automate high-converting payments, and scale your business with the high-performance toolkit built for modern entrepreneurs.
-                </p>
-<div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-<button class="w-full sm:w-auto px-10 py-5 bg-primary text-white text-lg font-black rounded-xl hover:shadow-[0_0_40px_rgba(34,139,34,0.4)] transition-all">
-                        Get Started Free
-                    </button>
-<button class="w-full sm:w-auto px-10 py-5 glass-card text-white text-lg font-black rounded-xl hover:bg-white/10 transition-all border border-white/10">
-                        Book a Live Demo
-                    </button>
-</div>
-<div class="mt-24 relative mx-auto max-w-6xl aspect-[16/9] rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent z-10"></div>
-<img alt="Presto CRM Dashboard showing analytics and customer data" class="w-full h-full object-cover" data-alt="Modern high-tech CRM dashboard interface showing data charts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8L6OGIe7vUQXxKMzomCjDznQiZP8bxodBAwK9lpvVhTgKME2cARTmTIWMpat6BnsYT9OYdpjtrKzAnCwT3440Rar_0J35jM-ZV5YV48SrVNuGVdS0xQWGYxDZUHtMq-oKPZOxvGRW1s-0s9H74oRXM3bKj6mgh22O0uz4w5uvZEetUyINC_gZPbc-ZsRfkIg4wrKwyx-52HfjDDllK21DNm-I_0ehhjsQmrXLghq55qgEJCHxHYLg2EgPJjNmsB3-lx0m5nroR7U"/>
-</div>
-</div>
-</section>
-<!-- Features Grid -->
-<section class="py-24 px-6 bg-background-dark" id="features">
-<div class="max-w-7xl mx-auto">
-<div class="mb-20 text-center">
-<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Core Capabilities</h2>
-<h3 class="text-4xl md:text-6xl font-black">Everything you need to scale.</h3>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-<!-- Feature 1 -->
-<div class="glass-card p-10 rounded-2xl glow-border transition-all group">
-<div class="w-14 h-14 bg-navy rounded-xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white">groups</span>
-</div>
-<h4 class="text-2xl font-bold mb-4">Customer Management</h4>
-<p class="text-slate-400 leading-relaxed">Centralize every interaction. From first contact to lifetime loyalty, track detailed profiles and behavioral insights.</p>
-</div>
-<!-- Feature 2 -->
-<div class="glass-card p-10 rounded-2xl glow-border transition-all group">
-<div class="w-14 h-14 bg-navy rounded-xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white">credit_card</span>
-</div>
-<h4 class="text-2xl font-bold mb-4">MoMo &amp; Card Payments</h4>
-<p class="text-slate-400 leading-relaxed">Collect payments seamlessly via Mobile Money or Cards. Secure, instant processing integrated directly into your sales flow.</p>
-</div>
-<!-- Feature 3 -->
-<div class="glass-card p-10 rounded-2xl glow-border transition-all group">
-<div class="w-14 h-14 bg-navy rounded-xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white">inventory_2</span>
-</div>
-<h4 class="text-2xl font-bold mb-4">Orders &amp; Sales Tracking</h4>
-<p class="text-slate-400 leading-relaxed">Monitor inventory and sales performance in real-time. Automated stock alerts and delivery status updates at your fingertips.</p>
-</div>
-<!-- Feature 4 -->
-<div class="glass-card p-10 rounded-2xl glow-border transition-all group">
-<div class="w-14 h-14 bg-navy rounded-xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white">psychology</span>
-</div>
-<h4 class="text-2xl font-bold mb-4">Presto Q AI Assistant</h4>
-<p class="text-slate-400 leading-relaxed">Your 24/7 intelligent partner. Get data-driven insights, predictive lead scoring, and automated customer follow-ups.</p>
-</div>
-<!-- Feature 5 -->
-<div class="glass-card p-10 rounded-2xl glow-border transition-all group">
-<div class="w-14 h-14 bg-navy rounded-xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white">bar_chart_4_bars</span>
-</div>
-<h4 class="text-2xl font-bold mb-4">Analytics Dashboard</h4>
-<p class="text-slate-400 leading-relaxed">Visualize growth with stunning, interactive charts. Understand your revenue drivers and customer churn in high definition.</p>
-</div>
-<!-- Feature 6 -->
-<div class="glass-card p-10 rounded-2xl glow-border transition-all group">
-<div class="w-14 h-14 bg-navy rounded-xl flex items-center justify-center mb-8 border border-white/10 group-hover:bg-primary transition-colors">
-<span class="material-symbols-outlined text-3xl text-primary group-hover:text-white">bolt</span>
-</div>
-<h4 class="text-2xl font-bold mb-4">Workflow Automation</h4>
-<p class="text-slate-400 leading-relaxed">Automate the boring stuff. Create triggers for emails, tasks, and SMS notifications so you can focus on closing deals.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- WhatsApp AI Integration -->
-<section class="py-24 px-6 relative overflow-hidden" id="whatsapp">
-<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-<div class="relative">
-<div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/20 rounded-full blur-[100px]"></div>
-<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Next-Gen Integration</h2>
-<h3 class="text-4xl md:text-6xl font-black mb-8">WhatsApp AI. <br/>Sell while you sleep.</h3>
-<p class="text-xl text-slate-400 leading-relaxed mb-10">
-                        Presto Q lives where your customers are. Turn your WhatsApp into a high-converting storefront that handles inquiries, processes orders, and sends payment links automatically.
+<body class="font-display text-slate-100 selection:bg-presto-cyan/30 mesh-gradient min-h-screen overflow-x-hidden">
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 border-b border-white/10 bg-presto-blue/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="bg-presto-cyan p-1.5 rounded-lg">
+                    <span class="material-symbols-outlined text-presto-blue text-2xl">rocket_launch</span>
+                </div>
+                <h1 class="text-2xl font-black tracking-tighter text-white">PRESTO<span class="text-presto-cyan">CRM</span></h1>
+            </div>
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-white/70">
+                <a class="hover:text-presto-cyan transition-colors" href="#problem">Problem</a>
+                <a class="hover:text-presto-cyan transition-colors" href="#features">Features</a>
+                <a class="hover:text-presto-cyan transition-colors" href="#whatsapp">WhatsApp AI</a>
+                <a class="hover:text-presto-cyan transition-colors" href="#pricing">Pricing</a>
+                <a class="hover:text-presto-cyan transition-colors" href="#process">Process</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <button class="bg-presto-cyan text-presto-blue px-6 py-2.5 rounded-full text-sm font-bold hover:scale-105 transition-transform">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-48 pb-32 px-6 bg-gradient-to-br from-presto-blue to-presto-accent overflow-hidden">
+            <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 relative z-10">
+                <div class="lg:w-3/5 text-left">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 mb-8">
+                        <span class="text-xs font-bold uppercase tracking-widest text-presto-cyan">✨ Now Powered by Presto Q AI</span>
+                    </div>
+                    <h1 class="text-5xl md:text-8xl font-black tracking-tight leading-[0.9] mb-8 text-white">
+                        Run Your Entire Business From <span class="text-presto-cyan underline decoration-white/10">One Dashboard</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl text-white/80 max-w-2xl mb-12 font-light leading-relaxed">
+                        Manage customers, payments, orders, and operations — powered by AI and built for African businesses.
                     </p>
-<ul class="space-y-6">
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-full">check</span>
-<span class="text-lg font-medium">Automatic Product Catalogs</span>
-</li>
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-full">check</span>
-<span class="text-lg font-medium">Instant Payment Link Generation</span>
-</li>
-<li class="flex items-center gap-4">
-<span class="material-symbols-outlined text-primary bg-primary/10 p-2 rounded-full">check</span>
-<span class="text-lg font-medium">Natural Language Inquiry Handling</span>
-</li>
-</ul>
-</div>
-<div class="relative flex justify-center">
-<!-- Orbit Animation Placeholder -->
-<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div class="w-96 h-96 border border-primary/20 rounded-full animate-[spin_10s_linear_infinite]">
-<div class="absolute -top-2 -left-2 w-6 h-6 bg-primary rounded-full shadow-[0_0_15px_#228B22]"></div>
-</div>
-</div>
-<!-- Phone Mockup -->
-<div class="w-[320px] h-[640px] bg-zinc-900 rounded-[3rem] border-8 border-zinc-800 relative overflow-hidden shadow-2xl z-10">
-<div class="h-14 bg-zinc-800 flex items-center justify-between px-8 pt-4">
-<div class="text-xs text-white">9:41</div>
-<div class="flex gap-2">
-<span class="material-symbols-outlined text-xs">signal_cellular_4_bar</span>
-<span class="material-symbols-outlined text-xs">wifi</span>
-<span class="material-symbols-outlined text-xs">battery_full</span>
-</div>
-</div>
-<div class="p-4 space-y-4 h-full bg-[#0b141a]">
-<div class="flex justify-start">
-<div class="bg-zinc-800 text-white p-3 rounded-2xl rounded-tl-none text-sm max-w-[80%]">
+                    <div class="flex flex-col sm:flex-row items-center gap-6">
+                        <button class="w-full sm:w-auto px-10 py-5 bg-presto-cyan text-presto-blue text-lg font-black rounded-2xl hover:shadow-2xl transition-all">Get Started</button>
+                        <button class="w-full sm:w-auto px-10 py-5 bg-white/10 text-white text-lg font-black rounded-2xl border border-white/20 hover:bg-white/20 transition-all">Book Demo</button>
+                    </div>
+                </div>
+                <!-- Mini Stats Mockup -->
+                <div class="lg:w-2/5 w-full">
+                    <div class="bg-black/40 backdrop-blur-2xl p-8 rounded-4xl border border-white/10 shadow-3xl">
+                        <div class="flex justify-between items-center mb-8">
+                            <span class="text-sm font-bold text-white/40 uppercase tracking-widest">Revenue Today</span>
+                            <span class="text-presto-cyan font-bold">+12%</span>
+                        </div>
+                        <div class="text-4xl font-black text-white mb-8">GHS 12,450.00</div>
+                        <div class="space-y-4">
+                            <div class="h-2 bg-white/5 rounded-full overflow-hidden">
+                                <div class="bg-presto-cyan h-full w-[70%]"></div>
+                            </div>
+                            <div class="flex justify-between text-xs font-bold">
+                                <span class="text-white/40">MOMO PAYMENTS</span>
+                                <span class="text-presto-cyan">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-0 right-0 w-full h-full bg-white opacity-[0.02] blur-[150px] rounded-full -mr-[50%] -mt-[25%] pointer-events-none"></div>
+        </section>
+
+        <!-- Problem Section -->
+        <section class="py-24 px-6 bg-white" id="problem">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <h2 class="text-presto-blue font-black text-4xl md:text-5xl mb-8">Too many tools. <br/><span class="text-slate-400">Not enough control.</span></h2>
+                        <p class="text-xl text-slate-500 mb-12">Running a business in Africa shouldn't feel like a juggling act.</p>
+                        <div class="space-y-6">
+                            <div class="flex gap-4 items-start">
+                                <span class="material-symbols-outlined text-red-500">error</span>
+                                <p class="text-slate-700 font-semibold text-lg">Switching between MoMo apps, WhatsApp, and spreadsheets</p>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <span class="material-symbols-outlined text-red-500">error</span>
+                                <p class="text-slate-700 font-semibold text-lg">No clear view of real-time revenue</p>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <span class="material-symbols-outlined text-red-500">error</span>
+                                <p class="text-slate-700 font-semibold text-lg">Manual customer tracking leads to missed follow-ups</p>
+                            </div>
+                            <div class="flex gap-4 items-start">
+                                <span class="material-symbols-outlined text-red-500">error</span>
+                                <p class="text-slate-700 font-semibold text-lg">Delayed responses leading to lost sales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-100 p-12 rounded-4xl border border-slate-200 text-center">
+                        <span class="text-6xl mb-8 block">😫</span>
+                        <h4 class="text-2xl font-black text-slate-800 mb-4">Stop the Chaos</h4>
+                        <p class="text-slate-500">Traditional methods aren't built for scale. You need a system that works as hard as you do.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solution Section -->
+        <section class="py-24 px-6 bg-background-dark text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">The Solution</h2>
+                <h3 class="text-4xl md:text-6xl font-black text-white mb-8">Everything your business needs — in one place</h3>
+                <p class="text-xl text-slate-400 leading-relaxed max-w-2xl mx-auto">
+                    Presto CRM gives you a centralized system to manage customers, track payments, automate workflows, and grow faster with AI.
+                </p>
+            </div>
+        </section>
+
+        <!-- Core Features -->
+        <section class="py-24 px-6" id="features">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- F1 -->
+                    <div class="glass-card p-10 rounded-3xl group hover:border-presto-cyan/30 transition-all">
+                        <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-presto-cyan transition-colors">
+                            <span class="material-symbols-outlined text-presto-cyan group-hover:text-presto-blue text-3xl">groups</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Customer Management</h4>
+                        <p class="text-slate-400">Centralize interactions and track detailed profiles.</p>
+                    </div>
+                    <!-- F2 -->
+                    <div class="glass-card p-10 rounded-3xl group hover:border-presto-cyan/30 transition-all">
+                        <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-presto-cyan transition-colors">
+                            <span class="material-symbols-outlined text-presto-cyan group-hover:text-presto-blue text-3xl">payments</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Payments (MoMo + Card)</h4>
+                        <p class="text-slate-400">Collect payments via Mobile Money or Cards instantly.</p>
+                    </div>
+                    <!-- F3 -->
+                    <div class="glass-card p-10 rounded-3xl group hover:border-presto-cyan/30 transition-all">
+                        <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-presto-cyan transition-colors">
+                            <span class="material-symbols-outlined text-presto-cyan group-hover:text-presto-blue text-3xl">inventory_2</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Orders & Sales Tracking</h4>
+                        <p class="text-slate-400">Monitor inventory and sales performance in real-time.</p>
+                    </div>
+                    <!-- F4 -->
+                    <div class="glass-card p-10 rounded-3xl group hover:border-presto-cyan/30 transition-all">
+                        <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-presto-cyan transition-colors">
+                            <span class="material-symbols-outlined text-presto-cyan group-hover:text-presto-blue text-3xl">psychology</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Presto Q AI Assistant</h4>
+                        <p class="text-slate-400">Your 24/7 partner for data-driven insights and follow-ups.</p>
+                    </div>
+                    <!-- F5 -->
+                    <div class="glass-card p-10 rounded-3xl group hover:border-presto-cyan/30 transition-all">
+                        <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-presto-cyan transition-colors">
+                            <span class="material-symbols-outlined text-presto-cyan group-hover:text-presto-blue text-3xl">bar_chart_4_bars</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Analytics Dashboard</h4>
+                        <p class="text-slate-400">Visualize growth with interactive real-time charts.</p>
+                    </div>
+                    <!-- F6 -->
+                    <div class="glass-card p-10 rounded-3xl group hover:border-presto-cyan/30 transition-all">
+                        <div class="w-14 h-14 bg-navy rounded-2xl flex items-center justify-center mb-8 border border-white/5 group-hover:bg-presto-cyan transition-colors">
+                            <span class="material-symbols-outlined text-presto-cyan group-hover:text-presto-blue text-3xl">notifications_active</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Automation & Notifications</h4>
+                        <p class="text-slate-400">Automate triggers for emails, tasks, and SMS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WhatsApp AI -->
+        <section class="py-24 px-6 relative overflow-hidden" id="whatsapp">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div>
+                    <h2 class="text-presto-cyan font-bold tracking-widest uppercase text-sm mb-4">Commerce Unlocked</h2>
+                    <h3 class="text-4xl md:text-6xl font-black mb-8 text-white">Turn WhatsApp into <br/>your sales engine</h3>
+                    <div class="space-y-8">
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-presto-cyan">chat</span>
+                            <div>
+                                <h5 class="font-bold text-xl uppercase tracking-tighter">Instant Response</h5>
+                                <p class="text-slate-400">Customer messages → AI responds instantly, 24/7.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-presto-cyan">shopping_cart</span>
+                            <div>
+                                <h5 class="font-bold text-xl uppercase tracking-tighter">Smart Suggestions</h5>
+                                <p class="text-slate-400">AI suggests products/services based on intent.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-presto-cyan">link</span>
+                            <div>
+                                <h5 class="font-bold text-xl uppercase tracking-tighter">Auto-Payments</h5>
+                                <p class="text-slate-400">Payment links generated automatically for MoMo/Card.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <span class="material-symbols-outlined text-presto-cyan">task_alt</span>
+                            <div>
+                                <h5 class="font-bold text-xl uppercase tracking-tighter">Real-time Confirmation</h5>
+                                <p class="text-slate-400">Orders confirmed in real-time on your dashboard.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Phone UI Mockup -->
+                <div class="relative flex justify-center">
+                    <div class="w-[320px] h-[640px] bg-zinc-900 rounded-[3rem] border-8 border-zinc-800 relative shadow-4xl overflow-hidden">
+                        <div class="p-4 bg-[#0b141a] h-full space-y-4">
+                            <div class="flex justify-start">
+                                <div class="bg-zinc-800 text-white p-3 rounded-2xl rounded-tl-none text-sm max-w-[80%]">
                                     Hello! How can I help you today?
                                 </div>
-</div>
-<div class="flex justify-end">
-<div class="bg-primary text-white p-3 rounded-2xl rounded-tr-none text-sm max-w-[80%]">
-                                    I want to buy the Premium Coffee Blend.
+                            </div>
+                            <div class="flex justify-start">
+                                <div class="bg-zinc-800 text-white p-3 rounded-2xl rounded-tl-none text-sm max-w-[80%] border-l-4 border-presto-cyan">
+                                    <p class="font-bold text-presto-cyan mb-2">Presto Q AI</p>
+                                    I see you're interested in our Catering Service. Would you like to generate a payment link?
                                 </div>
-</div>
-<div class="flex justify-start">
-<div class="bg-zinc-800 text-white p-3 rounded-2xl rounded-tl-none text-sm max-w-[80%]">
-                                    Great choice! That's GHS 120. Would you like to pay with MoMo?
-                                </div>
-</div>
-<div class="flex justify-end">
-<div class="bg-primary text-white p-3 rounded-2xl rounded-tr-none text-sm max-w-[80%]">
-                                    Yes, please.
-                                </div>
-</div>
-<div class="flex justify-start">
-<div class="bg-zinc-800 text-white p-3 rounded-2xl rounded-tl-none text-sm max-w-[80%] border-l-4 border-primary">
-<p class="mb-2">Invoice #8821 Created!</p>
-<button class="bg-primary text-white px-4 py-2 rounded-lg font-bold w-full">Pay Now</button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- How It Works -->
-<section class="py-24 px-6 border-y border-white/5" id="how-it-works">
-<div class="max-w-7xl mx-auto">
-<div class="mb-20 text-center">
-<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">The Process</h2>
-<h3 class="text-4xl md:text-6xl font-black">4 Steps to Dominance.</h3>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
-<div class="relative">
-<span class="text-8xl font-black text-white/5 absolute -top-10 -left-4">01</span>
-<h5 class="text-xl font-bold mb-4 pt-4">Connect Assets</h5>
-<p class="text-slate-400">Import your existing customer list and connect your payment accounts in minutes.</p>
-</div>
-<div class="relative">
-<span class="text-8xl font-black text-white/5 absolute -top-10 -left-4">02</span>
-<h5 class="text-xl font-bold mb-4 pt-4">Train Presto Q</h5>
-<p class="text-slate-400">Set your product preferences and let our AI learn your brand voice and sales script.</p>
-</div>
-<div class="relative">
-<span class="text-8xl font-black text-white/5 absolute -top-10 -left-4">03</span>
-<h5 class="text-xl font-bold mb-4 pt-4">Launch WhatsApp</h5>
-<p class="text-slate-400">Activate your automated storefront and start receiving orders while you work on high-level strategy.</p>
-</div>
-<div class="relative">
-<span class="text-8xl font-black text-white/5 absolute -top-10 -left-4">04</span>
-<h5 class="text-xl font-bold mb-4 pt-4">Scale &amp; Optimize</h5>
-<p class="text-slate-400">Use our 3D analytics dashboard to identify growth leaks and double down on what works.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- Pricing -->
-<section class="py-24 px-6" id="pricing">
-<div class="max-w-7xl mx-auto">
-<div class="mb-20 text-center">
-<h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">Investment</h2>
-<h3 class="text-4xl md:text-6xl font-black">Simple, growth-focused pricing.</h3>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-<!-- Standard -->
-<div class="glass-card p-8 rounded-2xl border border-white/10">
-<h4 class="text-xl font-bold mb-2">Essential</h4>
-<div class="text-4xl font-black mb-6">GHS 1,200<span class="text-sm font-normal text-slate-400">/mo</span></div>
-<ul class="space-y-4 mb-8 text-slate-400">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> 500 Customers</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Core CRM Features</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Standard Analytics</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> MoMo Integration</li>
-</ul>
-<button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5 transition-all">Choose Plan</button>
-</div>
-<!-- Starter Bundle - Featured -->
-<div class="bg-primary p-1 rounded-2xl scale-110 shadow-[0_0_50px_rgba(34,139,34,0.3)] relative z-20">
-<div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-navy text-white text-[10px] font-black uppercase tracking-[3px] py-1.5 px-6 rounded-full border border-primary">Most Popular</div>
-<div class="bg-[#0b141a] p-10 rounded-[14px]">
-<h4 class="text-2xl font-black mb-2 text-white">Starter Bundle</h4>
-<div class="text-5xl font-black mb-6 text-white">GHS 3,500<span class="text-sm font-normal text-slate-400">/mo</span></div>
-<ul class="space-y-4 mb-10 text-slate-300">
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> Unlimited Customers</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> WhatsApp AI Integration</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> 3D Advanced Analytics</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> Full Sales Automation</li>
-<li class="flex items-center gap-3"><span class="material-symbols-outlined text-primary">check_circle</span> Dedicated Success Manager</li>
-</ul>
-<button class="w-full py-5 bg-primary text-white font-black rounded-xl hover:shadow-[0_0_30px_#228B22] transition-all transform active:scale-95">Start Growing Now</button>
-</div>
-</div>
-<!-- Enterprise -->
-<div class="glass-card p-8 rounded-2xl border border-white/10">
-<h4 class="text-xl font-bold mb-2">Corporate</h4>
-<div class="text-4xl font-black mb-6 text-white">Custom</div>
-<ul class="space-y-4 mb-8 text-slate-400">
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Multi-Store Support</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> Custom API Access</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> White-label Dashboard</li>
-<li class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-sm">check_circle</span> On-premise Deployment</li>
-</ul>
-<button class="w-full py-4 rounded-xl border border-white/20 font-bold hover:bg-white/5 transition-all">Contact Sales</button>
-</div>
-</div>
-</div>
-</section>
-<!-- Final CTA -->
-<section class="py-24 px-6 text-center">
-<div class="max-w-4xl mx-auto glass-card p-16 rounded-[3rem] border-primary/20 relative overflow-hidden">
-<div class="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-[80px]"></div>
-<h3 class="text-4xl md:text-7xl font-black mb-8">Ready to transform your business?</h3>
-<p class="text-xl text-slate-400 mb-12">Join 1,200+ fast-growing brands using Presto CRM to automate their sales.</p>
-<button class="bg-primary text-white px-12 py-6 rounded-2xl text-xl font-black hover:scale-105 transition-transform shadow-2xl">
-                    Get Started - It's Free for 14 Days
-                </button>
-<p class="mt-6 text-sm text-slate-500">No credit card required. 2-minute setup.</p>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="py-20 px-6 border-t border-white/5 bg-background-dark">
-<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
-<div class="col-span-1 md:col-span-1">
-<div class="flex items-center gap-3 mb-8">
-<div class="bg-primary p-1.5 rounded-lg">
-<span class="material-symbols-outlined text-white text-xl">rocket_launch</span>
-</div>
-<h2 class="text-xl font-black tracking-tighter text-white">PRESTO<span class="text-primary">CRM</span></h2>
-</div>
-<p class="text-slate-500 leading-relaxed">The high-performance toolkit for modern businesses looking to automate growth and customer satisfaction.</p>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Product</h6>
-<ul class="space-y-4 text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="#">Features</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">WhatsApp AI</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Integrations</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Roadmap</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Company</h6>
-<ul class="space-y-4 text-slate-500">
-<li><a class="hover:text-primary transition-colors" href="#">About Us</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Terms of Service</a></li>
-</ul>
-</div>
-<div>
-<h6 class="font-bold text-white mb-6">Connect</h6>
-<div class="flex gap-4 mb-8">
-<a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">public</span></a>
-<a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">share</span></a>
-<a class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-primary transition-colors" href="#"><span class="material-symbols-outlined text-lg">mail</span></a>
-</div>
-<p class="text-xs text-slate-600">Headquartered in Accra, Ghana. Serving the world.</p>
-</div>
-</div>
-<div class="max-w-7xl mx-auto pt-8 border-t border-white/5 text-center text-slate-600 text-sm">
-            © 2024 Presto CRM Technologies Ltd. All rights reserved.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="py-24 px-6 bg-white text-presto-blue" id="pricing">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="font-black text-4xl md:text-6xl mb-4">Simple, Transparent Pricing</h2>
+                    <p class="text-slate-500 text-xl font-semibold">GHS 3,500 Total Starter Cost (One-time setup + system access)</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- CRM -->
+                    <div class="p-10 border-2 border-slate-100 rounded-4xl bg-slate-50/50">
+                        <h4 class="text-2xl font-black mb-2">CRM Platform</h4>
+                        <div class="text-4xl font-black mb-8 text-presto-blue">GHS 1,000</div>
+                        <ul class="space-y-4 font-semibold text-slate-500">
+                            <li>✓ Full CRM dashboard</li>
+                            <li>✓ Customer management</li>
+                            <li>✓ Orders & transactions</li>
+                            <li>✓ Analytics & reporting</li>
+                        </ul>
+                    </div>
+                    <!-- WhatsApp -->
+                    <div class="p-10 border-2 border-slate-100 rounded-4xl bg-slate-50/50">
+                        <h4 class="text-2xl font-black mb-2">WhatsApp AI</h4>
+                        <div class="text-4xl font-black mb-8 text-presto-blue">GHS 500</div>
+                        <ul class="space-y-4 font-semibold text-slate-500">
+                            <li>✓ Presto Q Assistant</li>
+                            <li>✓ Automated replies</li>
+                            <li>✓ Link generation</li>
+                            <li>✓ Interaction handling</li>
+                        </ul>
+                    </div>
+                    <!-- Onboarding -->
+                    <div class="p-10 border-2 border-presto-blue rounded-4xl bg-presto-blue text-white relative">
+                        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-presto-cyan text-presto-blue px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest">Crucial</span>
+                        <h4 class="text-2xl font-black mb-2">Onboarding</h4>
+                        <div class="text-4xl font-black mb-8">GHS 2,000</div>
+                        <ul class="space-y-4 font-semibold opacity-80 text-sm">
+                            <li>✓ Full business config</li>
+                            <li>✓ Product/Menu upload</li>
+                            <li>✓ Payment integration</li>
+                            <li>✓ Staff on-site training</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="py-24 px-6 bg-background-dark" id="process">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20 text-center">
+                    <h2 class="text-primary font-bold tracking-widest uppercase text-sm mb-4">The Journey</h2>
+                    <h3 class="text-4xl md:text-6xl font-black text-white">4 Steps to Dominance</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                    <div class="relative">
+                        <span class="text-8xl font-black text-white/5 absolute -top-10 -left-6">01</span>
+                        <h5 class="text-xl font-bold mb-4 pt-12">Onboarding</h5>
+                        <p class="text-slate-500">We onboard your business and define your goals.</p>
+                    </div>
+                    <div class="relative">
+                        <span class="text-8xl font-black text-white/5 absolute -top-10 -left-6">02</span>
+                        <h5 class="text-xl font-bold mb-4 pt-12">Integration</h5>
+                        <p class="text-slate-500">Set up your CRM and WhatsApp AI engine.</p>
+                    </div>
+                    <div class="relative">
+                        <span class="text-8xl font-black text-white/5 absolute -top-10 -left-6">03</span>
+                        <h5 class="text-xl font-bold mb-4 pt-12">Launch</h5>
+                        <p class="text-slate-500">Upload your product catalog and go live.</p>
+                    </div>
+                    <div class="relative">
+                        <span class="text-8xl font-black text-white/5 absolute -top-10 -left-6">04</span>
+                        <h5 class="text-xl font-bold mb-4 pt-12">Scale</h5>
+                        <p class="text-slate-500">Manage orders instantly and grow faster.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases -->
+        <section class="py-24 px-6 bg-white text-presto-blue">
+            <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-4 text-center">
+                <span class="px-8 py-4 bg-slate-100 rounded-2xl font-black text-xl uppercase tracking-tighter">Restaurants</span>
+                <span class="px-8 py-4 bg-slate-100 rounded-2xl font-black text-xl uppercase tracking-tighter">Retail Businesses</span>
+                <span class="px-8 py-4 bg-slate-100 rounded-2xl font-black text-xl uppercase tracking-tighter">Service Providers</span>
+                <span class="px-8 py-4 bg-slate-100 rounded-2xl font-black text-xl uppercase tracking-tighter">Organizations</span>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-24 px-6 text-center">
+            <div class="max-w-4xl mx-auto bg-presto-blue p-16 md:p-24 rounded-[4rem] text-white overflow-hidden relative">
+                <div class="absolute -top-40 -right-40 w-96 h-96 bg-presto-cyan/10 rounded-full blur-[100px]"></div>
+                <h3 class="text-4xl md:text-7xl font-black mb-12">Start running your business <br/><span class="text-presto-cyan">the smart way</span></h3>
+                <div class="flex flex-col sm:flex-row justify-center gap-6">
+                    <button class="bg-presto-cyan text-presto-blue px-12 py-6 rounded-2xl text-xl font-black hover:scale-105 transition-transform">Get Started Now</button>
+                    <button class="bg-white/10 text-white px-12 py-6 rounded-2xl text-xl font-black hover:bg-white/20 transition-all border border-white/20">Book a Demo</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-20 px-6 border-t border-white/5 bg-background-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20 text-slate-500">
+                <div class="col-span-1 md:col-span-1">
+                    <div class="flex items-center gap-3 mb-8">
+                        <div class="bg-presto-cyan p-1.5 rounded-lg">
+                            <span class="material-symbols-outlined text-presto-blue text-2xl">rocket_launch</span>
+                        </div>
+                        <h2 class="text-2xl font-black tracking-tighter text-white">PRESTO<span class="text-presto-cyan">CRM</span></h2>
+                    </div>
+                    <p class="text-sm leading-relaxed">Built to help African businesses grow faster and operate smarter. A fully set up business system.</p>
+                </div>
+                <div>
+                    <h6 class="font-black text-white text-xs uppercase tracking-widest mb-8">Products</h6>
+                    <ul class="space-y-4 text-sm font-semibold">
+                        <li><a href="#" class="hover:text-presto-cyan">Presto Q AI</a></li>
+                        <li><a href="#" class="hover:text-presto-cyan">PrestoVotes</a></li>
+                        <li><a href="#" class="hover:text-presto-cyan">PrestoPay</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-black text-white text-xs uppercase tracking-widest mb-8">Quick Links</h6>
+                    <ul class="space-y-4 text-sm font-semibold">
+                        <li><a href="#" class="hover:text-presto-cyan">About Presto</a></li>
+                        <li><a href="#" class="hover:text-presto-cyan">Contact</a></li>
+                        <li><a href="#" class="hover:text-presto-cyan">Terms & Privacy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="font-black text-white text-xs uppercase tracking-widest mb-8">Connect</h6>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-presto-cyan hover:text-presto-blue transition-all"><span class="material-symbols-outlined text-lg">public</span></a>
+                        <a href="#" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:bg-presto-cyan hover:text-presto-blue transition-all"><span class="material-symbols-outlined text-lg">share</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-white/5 text-center text-slate-600 text-xs font-bold uppercase tracking-widest">
+                © 2024 Presto CRM Technologies • Accra, Ghana
+            </div>
         </div>
-</footer>
-</body></html>
+    </footer>
+
+</body>
+</html>
